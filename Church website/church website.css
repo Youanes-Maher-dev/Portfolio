@@ -1,0 +1,64 @@
+.head{
+    position: relative;
+    margin-top: 2px;
+    height: 63px;
+}
+.head header .logo,
+.head header .h{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+}
+.head header .h{
+    padding: 0px;
+    font-size: 20px;
+    margin-top: 9px;
+    color: black;
+    right: 75px;
+    direction: rtl;
+}
+.head header .logo{
+    display: inline-block;
+    object-position: 58px -21px;
+    width: 200px;
+    height: 137px;
+}
+
+.head nav{
+    height: 50px;
+}
+.link{
+    display: inline-block;
+    color: black;
+    width: calc(60% - 90px)/6;
+    margin-left: 15px;
+    text-decoration: none;
+    padding-top: 21px;
+}
+.head nav a:hover{
+    color: black;
+}
+.front{
+    position: absolute;
+    right: 50%;
+    top: 222px;
+    margin-right: -266px;
+    z-index: 1;
+    border-radius: 18px;
+}
+.front1{
+    position: absolute;
+    right: 20px;
+    top: 76px;
+    z-index: 2;
+    border-radius: 71px;
+}
+.front2{
+    position: absolute;
+    z-index: 3;
+    height: 340%;
+    top: 384px;
+    left: 54px;
+    border-radius: 25px;
+}

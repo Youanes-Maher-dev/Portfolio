@@ -1,0 +1,245 @@
+/* 
+    selector {
+        property: value;
+    }
+*/
+p {
+    color: red;
+    font-size: 20px;
+    counter-increment: zxcxx;
+}
+
+p::after{
+    content: counter(zxcxx);
+}
+
+.special{
+    color: green;
+}
+
+#special{
+    color: blue;
+}
+
+.back-ground {
+    background-color: red; /* color name  */
+    background-color: rgb(0, 0, 0, 50%); /* Red Green Blue AlphaChannel */
+    background-color: #ff0000; /* Color Hex Code: the minimum is 0 and the maximum is f */
+    background-image: url();
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* If you want the image to be fixed in the screen  */
+    background-attachment: fixed; /* If you want the image to disappear if you scroll */
+    background-position: left top;
+    background-size: auto; /* put the image in its own size */
+    background-size: cover; /* Make the image fit the text */
+    background-size: contain; /* Make the image fully visible */
+} 
+
+.padding{
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    /* padding is the thing inside the background  */
+    /* padding: 10px, 20px, 10px, 20px; */
+    /* Top Right Bottom Left  */
+
+    /* padding: 10px*/
+    /* Top Right Buttom Left  */
+    /* 10px 10px 10px 10px */
+
+    /* padding: 10px, 20px; */
+    /* Top Right Buttom Left  */
+    /* 10px, 20px, 10px, 20px */
+}
+
+.margin{
+    margin: 20px;
+    /* margin is the thing outside the background  */
+    /* it has the same properities like padding  */
+    /* Negative numbers can be used  */
+}
+
+
+.border{
+    color: black;
+    border-width: 10px;
+    border-style: solid;
+    border-color: red green blue yellow;
+}
+
+
+.outlines{
+    background-color: #DDD;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 10px solid red;
+    outline: 10px solid blue;
+}
+
+/* 
+    Display properity
+        Block
+            - Take full width if no width
+            - Add line break
+            - respect margin, padding and width
+        Inline
+            - do not Add line break
+            - do not respict width and hight
+            - Respect padding and margin in the left and right
+        Inline-Block
+            - Allow elements before and after it 
+            - Respect padding and margin and width
+        None
+            -Make the element invisible
+*/
+
+
+
+.visible{
+    display: none;
+}
+
+
+div p {
+    color: inherit;
+}
+
+.dimentions{
+    width: 300px;
+    align-items: center;
+    display: inline-block;
+    padding: 10px;
+    max-height: 100px;
+    background-color: #DDD;
+    overflow: auto;
+}
+
+
+.decoration{
+    text-decoration: line-through;
+    text-transform: capitalize;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    text-indent: 50px;
+    line-height: 1.6;
+    white-space: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+}
+
+.font{
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.parent{
+    background-color: red;
+    padding: 10px;
+    overflow: hidden;
+}
+.parent div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #EEE;
+    width: calc(95% / 4);
+    margin-left: 1%;
+    float: left;
+}
+.opacity{
+    opacity: 0.5;
+}
+.clear{
+    clear: both;
+    z-index: 3;
+    list-style-type: circle;
+}
+
+.Pseudo1 span{
+    background-color: red;
+    display: inline-block;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+.Pseudo2::first-letter{
+    background-color: red;
+    display: inline-block;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+.Pseudo2::selection{
+    background-color: black;
+    color: yellow;
+}
+
+
+.parent1{
+    margin-bottom:10px ;
+    float: left;
+}
+.parent1 .user{
+    width: 50px;
+    height: 55.5px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #EEE;
+    font-size: 50px;
+    text-align: center;
+    float: left;
+}
+.parent1 .Pseudo3{
+    padding: 10px;
+    width: 600px;
+    float: left;
+    background-color: #EEE;
+    position: relative;
+}
+.Pseudo3::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    right: -10px;
+    top: 0px;
+    background-color: #009688;
+}
+.Pseudo3::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+    background-color: white;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #009688 transparent transparent;
+}
+
+:root{
+    --mainColor: #EEE;
+}
+
+.transition{
+    width: 200px;
+    height: 100px;
+    background-color: var(--mainColor);
+    transition-duration: 5s;
+    transition-delay: 2s;
+    transition-property: all !important;
+    transition-timing-function: ease;
+
+}
+.transition:hover{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 20px;
+}

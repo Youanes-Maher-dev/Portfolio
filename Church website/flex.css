@@ -1,0 +1,44 @@
+/* flex:[flex grow] [flex shrink] [flex basis] 0 1 Auto */
+.flex{
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+
+}
+.flex div{
+    background-color: red;
+    color: white;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    flex-grow: 1;
+    flex-shrink: 1px;
+    order: 5;
+    flex-basis: 200px;
+}
+
+.flex1{
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex1 div{
+    background-color: red;
+    color: white;
+    width: calc(98% / 3);
+    text-align: center;
+    padding: 20px;
+}

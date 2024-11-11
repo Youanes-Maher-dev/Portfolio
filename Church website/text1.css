@@ -1,0 +1,26 @@
+body{
+    background-image: url(background1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+div{
+    display: flex;
+    width: 1050px;
+    height: 600px;
+    flex-direction: column;
+    position: absolute;
+    right: 50%;
+    margin-right: -525px;
+}
+p{
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+}
+h1{
+    color: white;
+    display: flex;
+    align-self: center;
+}

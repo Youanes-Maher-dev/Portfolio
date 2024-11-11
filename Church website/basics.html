@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Now you know me</title>
+        <meta charset="UTF-8">
+        <style>
+        p{
+            color: black;
+        }
+        body{
+            background-color: white;
+        }
+        container {
+            background-color: #eee;
+            border: 2px solid gray;
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+        }
+        </style>
+        <link rel="stylesheet" href="basics css.css" type="text/css">
+    </head>
+    <!-- <body background="you can put an emage here"> -->
+    <body>
+        <div>
+            <h1><u>curly cute one</u></h1>
+            <h2 style="background-color:aqua">I am the panda</h2>
+        </div>
+        <center>
+            <div>
+                <img src="https://pngimg.com/uploads/panda/panda_PNG27.png" height="200" width="300" alt="not downloaded">
+                <br>
+                <b><i>keep calm and follow my diet</i></b>
+                <br>
+                <i>I just roll and eat</i>
+            </div>
+        </center>
+        <div>
+            <p class="the-first">Let me introduce myself <br> Iam the one featured on all social platforms <br> as a lazy roly-poly crature. Trust me i ain't lazy</p>
+        </div>
+        <div>
+            <p style="color:purple; background-color: yellow; width: 25%">It's just i get easily tired, <br> Surprisingly, it turns out i am the spirit animal for most of the humans</p>
+        </div>
+        <div>
+            <h5>We will keep taking you back to experience the awesomeness.</h5>
+            <!-- blank means that the link will be opened in new tag -->
+            <a href="https://www.google.com/" target="_blank" title="go to google">Let's try <small>click</small> this one more time</a>
+        </div>
+        <div>
+            <video width="200" height="150" src="/video for fundraising.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div>
+        <form action="" border="2" align="center">
+            <input type="hidden" value=",lmplmd">
+            name: <input type="text" required placeholder="first and last name" readonly name="user" value="yoyo"> <br><br>
+            your birthday: <input type="date" required autofocus><br><br>
+            mail: <input type="email" placeholder="......@gmail.com" disabled><br><br>
+            <acronym title="Enter a passwor consists of numbers and characters">password</acronym>: <input type="password"><br><br>
+            gender: <input type="radio" value="male" name="gender">  male <input type="radio" value="female" name="gender"> female<br><br>
+            phone number: <input type="number"  placeholder="only numbers"><br><br>
+            Qantaty: <input type="number" min="1" max="5" placeholder="from 1 to 5" height="10" width="100"><br><br>
+            How much you know : <input type="range" min="0" max="100"><br><br>
+            select a file to prove: <input type="file"><br><br>
+            select your favourite color: <input type="color"><br><br>
+            <div>
+                what is your type:<input id="win1" type="checkbox" name="os" value="Windows" checked />
+                <label for="win1">Windows</label> <input id="lin1" type="checkbox" name="os" value="Linux" />
+                <label for="lin1">Linux</label> <input id="mac1" type="checkbox" name="os" value="Mac" />
+                <label for="mac1">Mac</label>
+            </div><br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">reset</button>
+            <input type="button" class="hover-me" value="hover">
+        </form>
+        <br><br><br>
+        </div>
+        <a href="#first">go to the first of the page</a><br><br><br>
+        <div>
+            <!-- These are the frames of tables -->
+            <!--
+                thead
+                tbody
+                tfoot
+                tr => Table Row
+                td => Table Data Cell
+                th => Table Header Cell
+            -->
+            <table border="" align="center" cellpadding="20" cellspacing="20" frame="box" bgcolor="gray">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Saved</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>january</td>
+                        <td>500$</td>
+                    </tr>
+                    <tr>
+                        <td>march</td>
+                        <td>100$</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>sum</td>
+                        <td>600</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br><br><br>
+            <table class="border">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Saved</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>january</td>
+                        <td>500$</td>
+                    </tr>
+                    <tr>
+                        <td>march</td>
+                        <td>100$</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>sum</td>
+                        <td>600</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br><br><br>
+            <table frame="below">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Saved</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>january</td>
+                        <td>500$</td>
+                    </tr>
+                    <tr>
+                        <td>march</td>
+                        <td>100$</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>sum</td>
+                        <td>600</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br><br><br>
+            <table frame="hsides">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Saved</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>january</td>
+                        <td>500$</td>
+                    </tr>
+                    <tr>
+                        <td>march</td>
+                        <td>100$</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>sum</td>
+                        <td>600</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br><br><br>
+            <table frame="vsides">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Saved</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>january</td>
+                        <td>500$</td>
+                    </tr>
+                    <tr>
+                        <td>march</td>
+                        <td>100$</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>sum</td>
+                        <td>600</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br><br><br>
+            <!-- rowspan tag usage -->
+            <table border="2">
+                <tr>
+                    <th rowspan="3">sale1</th>
+                    <td>january</td>
+                    <td>$1493</td>
+                </tr>
+                <tr>
+                    <td>feb</td>
+                    <td>$1803</td>
+                </tr>
+                <tr>
+                    <td>mar</td>
+                    <td>$5290</td>
+                </tr>
+                <tr>
+                    <th rowspan="3">sale2</th>
+                    <td>April</td>
+                    <td>$894</td>
+                </tr>
+                <tr>
+                    <td>May</td>
+                    <td>$4535</td>
+                </tr>
+                <tr>
+                    <td>june</td>
+                    <td>$4055</td>
+                </tr>
+            </table>
+            <br><br><br>
+        </div>
+        <div>
+            <p style="font-size: 200%;"> 
+                My name is Youanes Maher
+                I am from Egypt 
+                I live in a big family
+            </p>
+            <pre align="center">
+                My name is Youanes Maher
+                I am from Egypt 
+                I live in a big family
+            </pre>
+            <blockquote>"tmlkmrlktmhkmdtklhmkermthmerktmhe
+                dlkthkmr;thme;rtmh;ermt;hmer;thmr;tlmh;ler
+                wthme;lrmh;lerthmer;thmlerhlermg;hmer;lldg"</blockquote>
+            <q class="quate">The life is the best teacher of all</q><br><br>
+            <em>this text is emphasized</em>
+            <p>note that 2<sup>2</sup> is equal to 4</p>
+            <p>do you know that the water is H<sub>2</sub>O</p>
+            <strike>deleted text</strike>
+            <s>incorrect text</s>
+            <p>do you    need anything?</p>
+            <p>do you &nbsp; &nbsp; &nbsp; &nbsp;need anything?</p>
+            <span>I need space</span>
+            <!--
+                b => Bold
+                strong => Bold => Important Text
+                i => Italic
+                em => Emphasized
+                mark => Marked Text Or Highlighted Text
+                u => Underline
+                small => Smaller text
+                del => Deleted Text
+                ins => Inserted Text
+                sub => Subscript
+                sup => Superscript
+            -->
+        </div>
+        <br><br><br><br>
+        <div>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>
+                    JS
+                    <ul>
+                      <li>Angular</li>
+                      <li>Reactjs</li>
+                      <li>Vuejs</li>
+                    </ul>
+                </li>
+            </ul><hr><hr><hr>
+            <!-- this will create unordered list --> 
+            <ol start="1">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+            </ol> <hr><hr><hr>
+            <!-- this creates an ordered list -->
+            <dl>
+                <dt>HTML</dt>
+                <dd>Language Of The Web</dd>
+                <dd>The First Lan</dd>
+                <dt>CSS</dt>
+                <dd>Language Of The Visuals</dd>
+            </dl><hr><hr><hr>
+        </div>
+        <address>
+            <!-- In this tag you can put the contact information -->
+        </address>
+        <div class="container">
+            <svg viewBox="0 0 100 100">
+                <g class="grid"></g>
+                <polygon points="40,20 80,40 50,60" fill="pink" stroke="black"></polygon>
+            </svg>
+        </div>
+        <div>
+            <marquee bgcolor="#eeeeee" behavior="" direction="right" scrollamount="15" width="100%" height="20"> My first website</marquee>
+            <br><p>
+            <marquee bgcolor="skyblue" behavior="" direction="down" scrollamount="10" width="49%" height="500">
+                <center>HTML</center>
+                <center>CSS</center>
+                <center>JAVA</center>
+            </marquee>
+            <marquee bgcolor="skyblue" behavior="" direction="up" scrollamount="10" width="49%" height="500">
+                <center>HTML</center>
+                <center>CSS</center>
+                <center>JAVA</center>
+            </marquee></p>
+            <br><br>
+            <marquee bgcolor="#eeeeee" behavior="" direction="left" scrollamount="15" width="100%" height="20"> My first website</marquee>
+            <br>
+        </div>
+        <div class="inline-me">I wish we were together</div>
+        <div class="Inline-you"> What is stopping you? </div>
+        <div class="trimmed">I know i am going to get slashed from bottom
+            put it is fine. someone will save me.
+        </div>
+        <div class="scroll">I knew you would save me. Let's show the world what we are made of</div>
+        <div class="visible">I knew you would save me. Let's show the world what we are made of</div>
+        <div class="auto">I knew you would save me. Let's show the world what we are made of</div>
+    </body>
+</html>

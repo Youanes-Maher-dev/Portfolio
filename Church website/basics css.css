@@ -1,0 +1,90 @@
+/* comments in css */
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Panda{
+    height: 20 px;
+    width: 30 px;
+    align-items: center;
+}
+.the-first{
+    border-style: solid;
+    border-color: black;
+    border-width: 2;
+    color: white;
+    margin: 20px;
+    /* This will create a margin of 20 around all sides */
+}
+.border{
+    border: 2px black solid;
+    margin-top: 20 px;
+    margin-bottom: 100px;
+}
+.quate {
+    color: blue;
+    border: 2px black solid;
+    border-radius: 20px;
+    margin: 20px 30px 20px 30px ;
+    /* in order of top right bottom left */
+}
+#first {
+    color: black;
+}
+body{
+    background-image: url("d.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+span{
+    display: block;
+    /* It takes the entire width of the screen */
+}
+.inline-me, .Inline-you{
+    display: inline-block;
+    height: 20px;
+    width: 50%;
+}
+.trimmed{
+    height: 20px;
+    width: 400px;
+    overflow: hidden;
+}
+.scroll{
+    height: 50px;
+    width: 200px;
+    overflow: scroll;
+}
+.visible{
+    height: 40px;
+    width: 200px;
+    overflow: scroll;
+    border: 1px solid #000;
+}
+.auto{
+    height: 40px;
+    width: 200px;
+    overflow: auto;
+}
+.hover-me:hover{
+    background-color: green;
+}
+a:active{
+    color: red;
+}
+a:visited{
+    color: #000;
+}
+/* 
+    values of background size are 100%
+    cover
+    contain
+*/
+/* 
+   # followed by the ID
+   . followed by the class
+   Hexadecimals values are written in following format #rrggbb where thes values are between 00 and ff
+   Margin is used to create space between things outside the boreder and the border.
+   padding is used to create a space around elements inside the border.
+*/

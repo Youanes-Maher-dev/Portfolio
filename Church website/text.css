@@ -1,0 +1,14 @@
+body{
+    background-image: url(background1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover
+}
+div{
+    display: flex;
+    width: 1050px;
+    height: 900px;
+}
+p{
+    color: white;
+}
